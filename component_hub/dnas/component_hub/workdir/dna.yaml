@@ -1,0 +1,19 @@
+---
+manifest_version: "1"
+name: component_hub
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1679197988180901
+  zomes:
+    - name: registry_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/registry_integrity.wasm"
+      dependencies: ~
+coordinator:
+  zomes:
+    - name: registry
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/registry.wasm"
+      dependencies:
+        - name: registry_integrity

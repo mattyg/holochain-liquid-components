@@ -1,0 +1,18 @@
+---
+manifest_version: "1"
+name: liquid-components
+description: ~
+roles:
+  - name: component_hub
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dnas/component_hub/workdir/registry.dna"
+      modifiers:
+        network_seed: ~
+        properties: ~
+        origin_time: ~
+        quantum_time: ~
+      version: ~
+      clone_limit: 0

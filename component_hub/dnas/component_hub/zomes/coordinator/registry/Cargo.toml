@@ -1,0 +1,15 @@
+[package]
+name = "registry"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "registry"
+
+[dependencies]
+hdk = { workspace = true }
+
+serde = { workspace = true }
+
+registry_integrity = { workspace = true } 

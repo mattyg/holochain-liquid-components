@@ -1,0 +1,15 @@
+[package]
+name = "registry_integrity"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "registry_integrity"
+
+[dependencies]
+hdi = { workspace = true }
+
+serde = { workspace = true }
+
+devhub_types = {git = "https://github.com/holochain/devhub-dnas.git", tag = "v0.12.0", package = "devhub_types"}
