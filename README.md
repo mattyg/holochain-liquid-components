@@ -1,20 +1,16 @@
 # Liquid Components
 
-Holochain UI Compenents & hApp for customizable vertical composability.
+Small units of composable UI+backend for your Holochain apps.
 
-This repository contains several key elements:
-
+## Architectural Elements:
 - ComponentHub: A hApp for publishing your LiquidComponents
-
 - UI Basin Input: A "placeholder" component which can be filled by any LiquidComponent that meets it's constraints
   - Search ComponentHub for compatible components that meet the Basin's constraints
   - Select a LiquidComponent
     - A compatible Cell is installed to your conductor
     - The WebComponent is downloaded
     - The WebComponent is rendered and connected to the newly installed Cell
-
 - UI Basin Renderer: Renders an already defined UI Basin's chosen WebComponent
-
 
 ## TODO
 - [ ] Props for allowlist & denylist of ComponentHub hashes in the LiquidComponentBasin
